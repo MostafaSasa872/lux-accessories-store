@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY — Luxury Women's Accessories</title>
+  <meta name="description" content="Discover exquisite handcrafted jewelry and accessories at MY. Explore our collection of necklaces, rings, bracelets, earrings, and watches designed for the modern woman." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">MY</a>
+
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="index.html" class="navbar__link active">Home</a></li>
+        <li><a href="products.html" class="navbar__link">Shop</a></li>
+        <li><a href="about.html" class="navbar__link">About</a></li>
+        <li><a href="contact.html" class="navbar__link">Contact</a></li>
+      </ul>
+
+      <div style="display:flex;align-items:center;gap:1.2rem;">
+        <div class="navbar__cart" id="openCartBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="navbar__cart-count" style="display:none;">0</span>
+        </div>
+        <div class="navbar__menu-btn" id="menuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="images/hero-banner.png" alt="Luxury accessories model" />
+    </div>
+    <div class="hero__overlay"></div>
+
+    <div class="container">
+      <div class="hero__content">
+        <span class="hero__label">New Collection 2026</span>
+        <h1 class="hero__title">
+          Elegance in<br/>Every <span>Detail</span>
+        </h1>
+        <p class="hero__text">
+          Discover handcrafted jewelry and accessories designed for the modern woman who embraces timeless beauty and effortless sophistication.
+        </p>
+        <div class="hero__buttons">
+          <a href="products.html" class="btn btn--gold">Shop Now</a>
+          <a href="about.html" class="btn btn--outline" style="border-color:rgba(255,255,255,0.4);color:rgba(255,255,255,0.85);">Our Story</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ====== CATEGORIES SECTION ====== -->
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section-label">Explore</span>
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Curated collections of timeless pieces, from statement necklaces to everyday essentials.</p>
+      </div>
+
+      <div class="categories__grid">
+        <!-- Necklaces -->
+        <a href="products.html?cat=necklaces" class="category-card fade-in">
+          <img src="images/new-necklace.jpeg" alt="Necklaces" class="category-card__img" />
+          <div class="category-card__overlay">
+            <div class="category-card__name">Necklaces</div>
+            <div class="category-card__count">Explore Collection</div>
+          </div>
+          <div class="category-card__arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </div>
+        </a>
+
+        <!-- Rings -->
+        <a href="products.html?cat=rings" class="category-card fade-in">
+          <img src="images/new-ring.jpeg" alt="Rings" class="category-card__img" />
+          <div class="category-card__overlay">
+            <div class="category-card__name">Rings</div>
+            <div class="category-card__count">Explore Collection</div>
+          </div>
+          <div class="category-card__arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </div>
+        </a>
+
+        <!-- Bracelets -->
+        <a href="products.html?cat=bracelets" class="category-card fade-in">
+          <img src="images/bracelet-1.png" alt="Bracelets" class="category-card__img" />
+          <div class="category-card__overlay">
+            <div class="category-card__name">Bracelets</div>
+            <div class="category-card__count">Explore Collection</div>
+          </div>
+          <div class="category-card__arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </div>
+        </a>
+
+        <!-- Earrings -->
+        <a href="products.html?cat=earrings" class="category-card fade-in">
+          <img src="images/earring-1.png" alt="Earrings" class="category-card__img" />
+          <div class="category-card__overlay">
+            <div class="category-card__name">Earrings</div>
+            <div class="category-card__count">Explore Collection</div>
+          </div>
+          <div class="category-card__arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </div>
+        </a>
+
+        <!-- Watches -->
+        <a href="products.html?cat=watches" class="category-card fade-in">
+          <img src="images/watch-1.png" alt="Watches" class="category-card__img" />
+          <div class="category-card__overlay">
+            <div class="category-card__name">Watches</div>
+            <div class="category-card__count">Explore Collection</div>
+          </div>
+          <div class="category-card__arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </div>
+        </a>
+
+        <!-- Accessories -->
+        <a href="products.html" class="category-card fade-in">
+          <img src="images/necklace-2.png" alt="Accessories" class="category-card__img" />
+          <div class="category-card__overlay">
+            <div class="category-card__name">All Accessories</div>
+            <div class="category-card__count">Explore Collection</div>
+          </div>
+          <div class="category-card__arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FEATURED PRODUCTS ====== -->
+  <section class="section section--cream" id="featured">
+    <div class="container">
+      <div class="products__header fade-in">
+        <div>
+          <span class="section-label">Curated for You</span>
+          <h2 class="section-title">Featured Pieces</h2>
+          <div class="divider"></div>
+        </div>
+        <a href="products.html" class="btn btn--outline btn--sm">View All</a>
+      </div>
+
+      <div class="products__grid" id="featuredProducts">
+        <!-- Products rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CTA BANNER ====== -->
+  <section class="banner">
+    <div class="banner__bg"></div>
+    <div class="banner__pattern"></div>
+    <div class="container">
+      <div class="banner__content fade-in">
+        <span class="section-label" style="color:var(--color-gold);">Limited Edition</span>
+        <h2 class="banner__title">Discover the <span>2026 Collection</span></h2>
+        <p class="banner__text">Handcrafted with passion and precision. Each piece tells a story of elegance, designed to be cherished for generations.</p>
+        <a href="products.html" class="btn btn--gold">Explore Collection</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TESTIMONIALS ====== -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section-label">What They Say</span>
+        <h2 class="section-title">Client Stories</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="testimonials__grid">
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-card__stars">★ ★ ★ ★ ★</div>
+          <p class="testimonial-card__text">"The Celestial Pendant is absolutely stunning. The quality is exceptional and it's become my everyday signature piece. I receive compliments every time I wear it."</p>
+          <div class="testimonial-card__author">— Sarah M.</div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-card__stars">★ ★ ★ ★ ★</div>
+          <p class="testimonial-card__text">"I've been searching for minimalist luxury jewelry, and MY exceeded all expectations. The craftsmanship is impeccable and the packaging feels like opening a gift."</p>
+          <div class="testimonial-card__author">— Amira K.</div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-card__stars">★ ★ ★ ★ ★</div>
+          <p class="testimonial-card__text">"Bought the Parisienne Watch as a birthday gift and it was perfect. The unboxing experience alone was worth it. Truly a luxury brand that delivers on quality."</p>
+          <div class="testimonial-card__author">— Leila R.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== NEWSLETTER ====== -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter__content fade-in">
+        <div>
+          <span class="section-label">Stay Connected</span>
+          <h2 class="section-title" style="margin-bottom:0.5rem;">Join the MY Circle</h2>
+          <p class="section-subtitle">Be the first to know about new arrivals, exclusive offers, and styling inspiration.</p>
+        </div>
+        <form class="newsletter__form" onsubmit="event.preventDefault(); showToast('Subscribed successfully!');">
+          <input type="email" class="newsletter__input" placeholder="Enter your email" required />
+          <button type="submit" class="btn btn--primary" style="white-space:nowrap;">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">MY</div>
+          <p class="footer__brand-text">Handcrafted luxury accessories for the modern woman. Each piece is designed with intention, made to inspire confidence and celebrate individuality.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Pinterest">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.85 6.39 9.28-.09-.78-.17-1.98.04-2.83.19-.77 1.22-4.93 1.22-4.93s-.31-.62-.31-1.54c0-1.45.84-2.53 1.88-2.53.89 0 1.32.67 1.32 1.47 0 .89-.57 2.23-.87 3.47-.25 1.04.52 1.89 1.54 1.89 1.85 0 3.27-1.95 3.27-4.77 0-2.49-1.79-4.23-4.35-4.23-2.96 0-4.7 2.22-4.7 4.52 0 .89.35 1.85.78 2.37.09.1.1.19.07.29-.08.32-.25 1.04-.29 1.18-.05.19-.15.23-.35.14-1.31-.61-2.13-2.52-2.13-4.06 0-3.31 2.41-6.35 6.94-6.35 3.65 0 6.48 2.6 6.48 6.07 0 3.62-2.28 6.54-5.46 6.54-1.07 0-2.07-.55-2.41-1.21l-.66 2.5c-.24.91-.88 2.05-1.31 2.74A10 10 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="products.html" class="footer__link">Shop All</a>
+          <a href="about.html" class="footer__link">About Us</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Categories</h4>
+          <a href="products.html?cat=necklaces" class="footer__link">Necklaces</a>
+          <a href="products.html?cat=rings" class="footer__link">Rings</a>
+          <a href="products.html?cat=bracelets" class="footer__link">Bracelets</a>
+          <a href="products.html?cat=earrings" class="footer__link">Earrings</a>
+          <a href="products.html?cat=watches" class="footer__link">Watches</a>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Help</h4>
+          <a href="#" class="footer__link">Shipping & Returns</a>
+          <a href="#" class="footer__link">Size Guide</a>
+          <a href="#" class="footer__link">FAQ</a>
+          <a href="#" class="footer__link">Privacy Policy</a>
+          <a href="#" class="footer__link">Terms of Service</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 MY. All rights reserved.</span>
+        <div class="footer__payments">
+          <span>Visa</span>
+          <span>Mastercard</span>
+          <span>PayPal</span>
+          <span>Apple Pay</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====== CART SIDEBAR ====== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-sidebar__header">
+      <h3 class="cart-sidebar__title">Shopping Bag</h3>
+      <div class="cart-sidebar__close" id="cartClose">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </div>
+    </div>
+    <div class="cart-sidebar__items" id="cartItems"></div>
+    <div class="cart-sidebar__empty" id="cartEmpty">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+      <p>Your bag is empty</p>
+      <a href="products.html" class="btn btn--primary btn--sm">Continue Shopping</a>
+    </div>
+    <div class="cart-sidebar__footer" id="cartFooter" style="display:none;">
+      <div class="cart-sidebar__total">
+        <span class="cart-sidebar__total-label">Total</span>
+        <span class="cart-sidebar__total-value" id="cartTotal">0.00 EGP</span>
+      </div>
+      <button class="btn btn--primary cart-sidebar__checkout" onclick="showToast('Checkout coming soon!')">Checkout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

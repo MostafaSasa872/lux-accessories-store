@@ -1,0 +1,13 @@
+# Utility scripts (local only)
+add_new_products.js
+add_new_products.ps1
+inject_products.ps1
+replace_dollar.ps1
+update.js
+update_necklaces.ps1
+
+# Diagram generator page (local only)
+diagrams.html
+
+# Diagram images folder (local only)
+diagrams/
